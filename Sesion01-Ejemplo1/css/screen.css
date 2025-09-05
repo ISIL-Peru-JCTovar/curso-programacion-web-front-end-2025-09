@@ -1,0 +1,33 @@
+img {
+  max-width: 100%;
+  width: 80%;
+  display: block;
+}
+
+* {
+  background-color: darkgray;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 360px) and (max-width: 612px)  { /* Cubriria aprox el 35% de devices mobiles */
+
+  * {
+    background-color: lightgray;
+    color: red;
+    font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  .div_img {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+}

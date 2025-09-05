@@ -1,0 +1,54 @@
+/* Una sola fuente cada una */
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Multiples fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Comic+Relief:wght@400;700&family=Story+Script&display=swap');
+
+/* Agregar fuentes locales (de mi servidor) */
+
+/* TTF no esta optimizado */
+@font-face {
+  font-family: 'Star Wars';
+  src: url('../fonts/Starjedi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* WOFF si esta optimizado para navegadores (pero mejor es WOFF2) */
+@font-face {
+  font-family: 'Hussar Web';
+  src: url('../fonts/HussarBoldWeb-bf92.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-subparrafo-1 {
+  font-family: 'Asimovian', Arial, sans-serif;
+}
+
+.font-parrafo-1a {
+  font-family: 'Comic Relief', Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.font-parrafo-1b {
+  font-family: 'Story Script', Arial, sans-serif;
+}
+
+.font-parrafo-1c {
+  font-family: 'Caprasimo', Arial, sans-serif;
+}
+
+.font-parrafo-jedi {
+  font-family: 'Star Wars', Arial, sans-serif;
+}
+
+.font-parrafo-hussar {
+  font-family: 'Hussar Web', Arial, sans-serif;
+}
