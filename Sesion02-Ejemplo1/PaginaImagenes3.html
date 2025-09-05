@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ISIL - Sesion N&deg; 2: Ejemplo de Imagenes</title>
+  <style>
+    .div_responsive_1 {
+      width: 50%;
+      background-color: burlywood;
+      border: 0;
+      padding: 0;
+    }
+    .img_responsive_1 {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ejemplos de Imagenes</h1>
+  
+  <!-- TIFF - PNG - JPG - WEBP  -->
+  <div style="width: 100%; background-color: white;">
+    <picture>
+      <source srcset="img/richard-stachmann-2207x3130.webp" media="(min-width: 1800px)">
+      <source srcset="img/richard-stachmann-1104x1565.jpg" media="(min-width: 1200px)">
+      <source srcset="img/richard-stachmann-552x783.webp" media="(min-width: 600px)">
+      <img src="img/richard-stachmann-552x783.webp" alt="Paisaje" class="img_responsive_1">
+    </picture>
+  </div>
+  
+</body>
+
+</html>
