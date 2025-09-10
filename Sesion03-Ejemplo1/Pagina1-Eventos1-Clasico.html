@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ISIL - Sesion N&deg; 3: Javascript Ejemplo de Eventos</title>
+  <style>
+    .div_responsive_1 {
+      width: 50%;
+      background-color: burlywood;
+      border: 0;
+      padding: 0;
+    }
+    .img_responsive_1 {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <script>
+    function colorearPanel(obj) {
+      obj.style.backgroundColor = "#000000";
+      obj.style.color = "#FFFFFF";
+    }
+    function descolorearPanel() {
+      //Javascript DOM - Document Object Model
+      var divPanel = document.getElementById("divPanel1"); //Funcion de JScript que me trae un objeto HTML por su ID
+      divPanel.style.backgroundColor = "burlywood";
+      divPanel.style.color = "#000000";
+    }
+    function imprimirMensaje(msg) {
+      alert(msg); //Funcion de JScript
+    }
+  </script>
+</head>
+
+<!-- Forma clasica: No recomendada -->
+
+<body onload="alert('ISIL: Pagina se carga.')">
+
+  <h1 id="tituloPrincipal" onclick="imprimirMensaje('Hello')">Ejemplos de Eventos</h1>
+  
+  <div id="divPanel1" style="width: 50%; background-color: burlywood;" 
+       onmouseover="colorearPanel(this);"
+       onmouseout="descolorearPanel();">
+    Texto
+  </div>
+  
+</body>
+
+</html>

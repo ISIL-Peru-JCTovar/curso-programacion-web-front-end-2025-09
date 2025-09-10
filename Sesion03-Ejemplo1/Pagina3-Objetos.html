@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ISIL - Sesion N&deg; 3: Javascript Ejemplo de Eventos</title>
+  <script src="js/pagina3-objetos.js" defer></script>
+  <style>
+    .div_responsive_1 {
+      width: 98%;
+      background-color: burlywood;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      border: 0;
+      padding: 0;
+    }
+    .img_responsive_1 {
+      max-width: 100%;
+      height: auto;
+    }
+    #tarjeta {
+      width: 230px;
+      max-width: 230px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      background-color: black;
+      color: white;
+      border: 2px solid;
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 6px 8px;
+      grid-auto-flow: row;
+      justify-items: stretch;
+      grid-template-areas:
+        ". ."
+        ". .";
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1 id="tituloPrincipal">Ejemplos de Eventos</h1>
+  
+  <div id="divPanel1" class="div_responsive_1">
+    <div id="tarjeta">
+      <div id="detalles">Nombres:</div>
+      <div id="detalles">Camila</div>
+      <div id="detalles">Edad:</div>
+      <div id="detalles">30</div>
+    </div>
+
+  </div>
+  
+</body>
+
+</html>
