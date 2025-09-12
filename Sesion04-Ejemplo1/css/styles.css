@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  color: #22200A;
+  background-color: #f7f8fa;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --brand: #0b66ff;
+  --text: #222;
+  --muted: #666;
+  --radius: 8px;
+  --gap: 16px;
+}
+
+/* Estilo de tipografia fluida */
+.isil_title {
+  font-size: clamp(1.25rem, 3.5vw, 4.25rem);
+  margin: 0 0 0px 0;
+}
+
+.isil_lead {
+  color: var(--muted);
+  margin: 0 0 12px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--gap);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid #e6e9ee;
+  position: relative;
+  z-index: 10;
+  background-color: beige;
+}
+
+.hero {
+  position: relative;
+  padding: 48px 0;
+}
+
+.columns-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--gap);
+  background-color: var(--surface);
+  margin-bottom: var(--gap);
+  box-shadow: 0 1px 0 #22200A;
+}
+
+.site-header.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.site-title {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 0;
+  font-size: 1.125rem;
+}
+
+.main-nav {
+  display: inline-block;
+  float: right;
+  margin-top: 6px;
+}
+
+.nav__link {
+  color: var(--brand);
+  text-decoration: underline;
+  margin-left: 12px;
+}
+
+.nav__link:hover {
+  text-decoration: none;
+  color: red;
+}
+
+table > tbody > tr:first-child {
+  background-color: cyan;
+  font-weight: bold;
+}
+
+table > tbody > tr:last-child {
+  background-color: gray;
+  font-weight: bold;
+}
+
+table > tbody > tr:nth-child(3) {
+  color: red;
+  font-weight: bold;
+}

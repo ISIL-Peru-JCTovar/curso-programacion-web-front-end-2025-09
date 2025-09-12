@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
+
+  <header class="site-header is-fixed">
     <div class="wrap">
       <h1 class="site-title">Taller CSS — Layout clásico</h1>
       <nav class="main-nav">
@@ -20,8 +21,8 @@
 
   <main class="wrap">
     <section class="hero">
-      <h2 class="hero__title">Título principal (responsive)</h2>
-      <p class="hero__lead">Breve descripción que ocupa hasta dos líneas.</p>
+      <h2 class="isil_title">Título principal (responsive)</h2>
+      <p class="isil_lead">Breve descripción que ocupa hasta dos líneas.</p>
     </section>
 
     <section class="columns-area">
@@ -34,6 +35,104 @@
       <h3>Artículo con columna múltiple</h3>
       <p>Texto largo que demostrará la propiedad multi-column (column-count / column-width)...</p>
       <p>Otro párrafo que seguirá fluyendo entre columnas para demo.</p>
+    </section>
+
+    <section class="product-table">
+      <h3>Lista de Productos</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre del Producto</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Foto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10</td>
+            <td>Smartphone X</td>
+            <td>Electrónica</td>
+            <td>S/ 2,500.00</td>
+            <td>5</td>
+            <td><img src="img/smartphone.jpg" alt="Smartphone X" width="50"></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Laptop Pro</td>
+            <td>Electrónica</td>
+            <td>S/ 2,200.00</td>
+            <td>3</td>
+            <td><img src="img/laptop.jpg" alt="Laptop Pro" width="50"></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>TV 4K</td>
+            <td>Electrodomésticos</td>
+            <td>S/ 1,800.00</td>
+            <td>2</td>
+            <td><img src="img/tv.jpg" alt="TV 4K" width="50"></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Refrigeradora</td>
+            <td>Electrodomésticos</td>
+            <td>S/ 1,500.00</td>
+            <td>1</td>
+            <td><img src="img/refrigeradora.jpg" alt="Refrigeradora" width="50"></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Tablet Z</td>
+            <td>Electrónica</td>
+            <td>S/ 1,200.00</td>
+            <td>4</td>
+            <td><img src="img/tablet.jpg" alt="Tablet Z" width="50"></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Microondas</td>
+            <td>Electrodomésticos</td>
+            <td>S/ 900.00</td>
+            <td>6</td>
+            <td><img src="img/microondas.jpg" alt="Microondas" width="50"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Audífonos</td>
+            <td>Accesorios</td>
+            <td>S/ 350.00</td>
+            <td>10</td>
+            <td><img src="img/audifonos.jpg" alt="Audífonos" width="50"></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Mouse Gamer</td>
+            <td>Accesorios</td>
+            <td>S/ 200.00</td>
+            <td>8</td>
+            <td><img src="img/mouse.jpg" alt="Mouse Gamer" width="50"></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Teclado Mecánico</td>
+            <td>Accesorios</td>
+            <td>S/ 180.00</td>
+            <td>7</td>
+            <td><img src="img/teclado.jpg" alt="Teclado Mecánico" width="50"></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>USB 64GB</td>
+            <td>Accesorios</td>
+            <td>S/ 60.00</td>
+            <td>15</td>
+            <td><img src="img/usb.jpg" alt="USB 64GB" width="50"></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
   </main>
