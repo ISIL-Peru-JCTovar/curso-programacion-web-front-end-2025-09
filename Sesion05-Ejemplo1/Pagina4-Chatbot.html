@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot en la Esquina Inferior Derecha</title>
+  <link rel="stylesheet" href="css/pagina4.css">
+</head>
+<body>
+  <button id="chatbot-toggle" title="Abrir Chatbot" style="display: block;">💬</button>
+  <div id="chatbot-container" style="display: none;">
+    <div id="chatbot-header">
+      Chatbot
+      <button id="chatbot-close" title="Cerrar">×</button>
+    </div>
+    <div id="chatbot-messages">
+      <div class="chatbot-message bot">
+        <div class="chatbot-bubble">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+      </div>
+    </div>
+    <form id="chatbot-input-area" autocomplete="off">
+      <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." required />
+      <button type="submit" id="chatbot-send">➤</button>
+    </form>
+  </div>
+  <script src="js/pagina4.js" defer></script>
+</body>
+
+</html>

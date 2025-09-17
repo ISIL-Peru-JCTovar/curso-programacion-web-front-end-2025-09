@@ -1,0 +1,57 @@
+:root {
+  --nav-bg: #450202;
+  --opchover: #a40808;
+  --opccolor: #fff;
+  --subopchover: #210202;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+nav {
+  background: var(--nav-bg);
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu > li {
+  position: relative;
+}
+.menu > li > a {
+  display: block;
+  color: var(--opccolor);
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.menu > li > a:hover {
+  background: var(--opchover);
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--opchover);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 180px;
+  z-index: 1000;
+}
+.submenu li a {
+  color: var(--opccolor);
+  padding: 12px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.submenu li a:hover {
+  background: var(--subopchover);
+}
+.menu > li:hover .submenu {
+  display: block;
+}
