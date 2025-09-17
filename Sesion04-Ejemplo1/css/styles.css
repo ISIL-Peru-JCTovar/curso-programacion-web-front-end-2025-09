@@ -111,3 +111,16 @@ table > tbody > tr:nth-child(3) {
   color: red;
   font-weight: bold;
 }
+
+.card,
+.card div.title {
+  color: red;
+}
+
+.card:hover {
+  color: yellow !important;
+}
+
+div.title {
+  color: blue !important;
+}

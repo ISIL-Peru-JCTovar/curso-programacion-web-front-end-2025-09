@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ejercicio: Microinteracciones CSS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Microinteracciones: Ejercicio práctico</h1>
+    <nav>
+      <a href="#destinos">Destinos Turisticos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#inputs">Inputs</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80&auto=format&fit=crop" alt="Paisaje" />
+      <div class="hero-text">
+        <h2>Bienvenido</h2>
+        <p>Plantilla base sin animaciones. Vamos a mejorarla.</p>
+      </div>
+    </section>
+
+    <section id="destinos" class="container">
+      <h2>Galería de cards (sin efectos)</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://blog.foto24.com/wp-content/uploads/2019/02/5-fotografias-Luis-Cajete-684x1024.jpg" alt="Imagen 1">
+          <h3>Destino Turistico 1</h3>
+          <p>Este es un paisaje muy popular.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://blog.foto24.com/wp-content/uploads/2019/02/2.2-683x1024.jpg" alt="Imagen 2">
+          <h3>Destino Turistico 2</h3>
+          <p>Este es un paisaje espectacular.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://blog.foto24.com/wp-content/uploads/2019/02/6-fotografia-de-Alejandro-Rodriguez-683x1024.jpg" alt="Imagen 3">
+          <h3>Destino Turistico 3</h3>
+          <p>Este es un paisaje solo para conocedores.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="container">
+      <h2>Botones</h2>
+      <button class="btn primary">Enviar</button>
+      <button class="btn ghost">Guardar</button>
+      <button id="likeBtn" class="btn like">♥ <span class="count">12</span></button>
+    </section>
+
+    <section id="inputs" class="container">
+      <h2>Inputs</h2>
+      <label class="field">
+        <input type="text" placeholder="Nombre" />
+      </label>
+      <label class="field">
+        <input type="email" placeholder="Correo" />
+      </label>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Ejercicio de microinteracciones — prueba y modifica.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

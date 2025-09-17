@@ -1,0 +1,143 @@
+:root {
+  --bg: #f6f8fb;
+  --card: #edd99e;
+  --accent: #3b82f6;
+  --muted: #6b7280;
+}
+
+/* Estilos base */
+
+* {
+  color: black;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: #111827;
+  line-height: 1.6;
+}
+
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #e6e9ef;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.site-header h1{font-size:1.1rem; margin:0}
+.site-header nav a{margin-left:1rem; color:var(--muted); text-decoration:none}
+
+.hero{
+  display:flex;
+  gap:1rem;
+  padding:1.5rem;
+  align-items:center;
+  background: linear-gradient(180deg, rgba(59,130,246,0.06), transparent);
+}
+.hero img{width:160px;height:100px;object-fit:cover;border-radius:8px}
+.hero-text h2{margin:.25rem 0; font-size:1.4rem}
+
+/* Microinteracciones en Grid de cards: Para imagenes */
+
+.container{padding:2rem}
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap:1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 10px 0 rgba(16, 64, 40, 0.03);
+  padding: 1rem;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.card:hover {
+  transform: translateY(-80px) scale(1.21);
+  box-shadow: 0 10px 24px 0 rgba(16, 24, 40, 0.12);
+  cursor: pointer;
+}
+
+/* Microinteracciones en botones: transformacion en pop */
+.btn {
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #efeefc;
+  color: #0f172a;
+  margin-right: 0.5rem;
+  transition: transform 200ms cubic-bezier(0.2, 0.9, 0.3, 1), box-shadow 200ms;
+}
+
+.btn.primary {
+  background: var(--accent);
+  /* background: #3b82f6; */
+  color: white;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #e6e9ef;
+  color: #111827;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px 0 rgba(107, 5, 44, 0.12);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn.like {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn.like:active {
+  animation: pop 320ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.60);
+    color: red;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
