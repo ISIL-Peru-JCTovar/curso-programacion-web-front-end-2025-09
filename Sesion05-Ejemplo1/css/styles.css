@@ -141,3 +141,57 @@ body {
     transform: scale(1);
   }
 }
+
+/* Microinteracciones en Formularios */
+
+.field {
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 360px;
+}
+
+.field input,
+.field select {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #e6e9ef;
+  background: white;
+  transition: box-shadow 300ms ease, border-color 300ms ease, transform 300ms ease;
+  outline: none;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field select {
+  width: 100%;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px 0 rgba(59, 130, 246, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Microinteraccion de Carga */
+.loader {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  border-top-color: var(--accent);
+  animation: spin 900ms linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }  
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+

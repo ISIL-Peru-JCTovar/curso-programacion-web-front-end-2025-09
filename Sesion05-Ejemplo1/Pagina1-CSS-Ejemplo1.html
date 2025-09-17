@@ -50,9 +50,11 @@
 
     <section id="contacto" class="container">
       <h2>Botones</h2>
-      <button class="btn primary">Enviar</button>
+      <button class="btn primary" onclick="procesarInfo();">Enviar</button>
       <button class="btn ghost">Guardar</button>
       <button id="likeBtn" class="btn like">♥ <span class="count">12</span></button>
+      <div id="loader" class="loader" aria-hidden="true" style="display:none;">
+      </div>
     </section>
 
     <section id="inputs" class="container">
@@ -62,6 +64,19 @@
       </label>
       <label class="field">
         <input type="email" placeholder="Correo" />
+      </label>
+      <label class="field">
+        <select placeholder="Pais">
+          <option value="" disabled selected>País</option>
+          <option value="pe">Perú</option>
+          <option value="cl">Chile</option>
+          <option value="ar">Argentina</option>
+          <option value="co">Colombia</option>
+          <option value="mx">México</option>
+        </select>
+      </label>
+      <label class="field">
+        <input type="checkbox" />Suscribirme al boletin
       </label>
     </section>
   </main>
