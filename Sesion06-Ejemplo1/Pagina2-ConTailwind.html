@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ISIL - Programacion Web Front End - Sesion N&deg; 6</title>
+  <!-- Importando Tailwind CSS desde CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/pagina-validaciones-jquery.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <h1 class="text-3xl font-bold text-center my-6">Pantalla con Tailwind</h1>
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div>
+        <h2 class="text-xl font-semibold mb-2">Noticia 1: Lanzamiento de Nuevo Producto</h2>
+        <img class="w-full h-40 object-cover rounded mb-2" src="https://www.upn.edu.pe/sites/default/files/styles/noticia_page_grande/public/2025-09/egresada-CNN-upn-v1.webp" alt="Imagen Noticia 1">
+        <p>La empresa XYZ ha anunciado el lanzamiento de su nuevo producto revolucionario que promete cambiar el mercado tecnológico.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold mb-2">Noticia 2: Evento Deportivo Internacional</h2>
+        <img class="w-full h-40 object-cover rounded mb-2" src="https://e-an.americatv.com.pe/actualidad-congreso-aprobo-octavo-retiro-fondos-afp-peru-n511044-627x352-1115571.jpg" alt="Imagen Noticia 2">
+        <p>El campeonato mundial de fútbol se celebrará este año en una ciudad emblemática, reuniendo a los mejores equipos del mundo.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold mb-2">Noticia 3: Avances en Medicina</h2>
+        <img class="w-full h-40 object-cover rounded mb-2" src="https://i0.wp.com/estrategos.org/wp-content/uploads/2020/02/inteligenciapreventiva_82082848-1.jpg" alt="Imagen Noticia 3">
+        <p>Científicos anuncian un importante avance en la lucha contra enfermedades crónicas, abriendo nuevas esperanzas para los pacientes.</p>
+      </div>
+      <div>
+        <h2 class="text-xl font-semibold mb-2">Noticia 4: Descubrimiento Científico</h2>
+        <img class="w-full h-40 object-cover rounded mb-2" src="https://www.udep.edu.pe/hoy/wp-content/uploads/sites/49/2020/11/Nueva-forma-de-politica-1.jpg" alt="Imagen Noticia 4">
+        <p>Un equipo internacional de investigadores ha descubierto un nuevo exoplaneta que podría albergar vida.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 mt-10">
+    <table class="min-w-full text-sm text-left text-gray-200 bg-gray-800 rounded-lg overflow-hidden">
+      <thead class="bg-gray-100 text-gray-900">
+        <tr>
+          <th scope="col" class="px-4 py-2 font-bold">#</th>
+          <th scope="col" class="px-4 py-2 font-bold">First</th>
+          <th scope="col" class="px-4 py-2 font-bold">Last</th>
+          <th scope="col" class="px-4 py-2 font-bold">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-gray-800">
+          <th scope="row" class="px-4 py-2 font-medium">1</th>
+          <td class="px-4 py-2">Mark</td>
+          <td class="px-4 py-2">Otto</td>
+          <td class="px-4 py-2">@mdo</td>
+        </tr>
+        <tr class="bg-gray-700">
+          <th scope="row" class="px-4 py-2 font-medium">2</th>
+          <td class="px-4 py-2">Jacob</td>
+          <td class="px-4 py-2">Thornton</td>
+          <td class="px-4 py-2">@fat</td>
+        </tr>
+        <tr class="bg-gray-800">
+          <th scope="row" class="px-4 py-2 font-medium">3</th>
+          <td class="px-4 py-2">John</td>
+          <td class="px-4 py-2">Doe</td>
+          <td class="px-4 py-2">@social</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container-fluid mx-auto px-4 mt-10">
+    <h2 class="text-2xl font-semibold mb-4">Formulario de Registro</h2>
+    <form action="https://httpbin.org/post" method="POST" id="formularioRegistro" class="bg-white p-6 rounded shadow-md max-w-lg mx-auto">
+      <div class="mb-8">
+        <label for="nombres" class="block text-gray-700 font-medium mb-1">Nombres</label>
+        <input type="text" id="nombres" name="nombres" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <div class="mb-8">
+        <label for="apellidos" class="block text-gray-700 font-medium mb-1">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <div class="mb-8">
+        <label for="pais" class="block text-gray-700 font-medium mb-1">Pais</label>
+        <select id="pais" name="pais" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <option value="">Seleccione un país</option>
+          <option value="PE">Perú</option>
+          <option value="US">Estados Unidos</option>
+          <option value="ES">España</option>
+          <option value="FR">Francia</option>
+          <option value="DE">Alemania</option>
+          <option value="IT">Italia</option>
+          <option value="JP">Japón</option>
+          <option value="CN">China</option>
+          <option value="IN">India</option>
+          <option value="BR">Brasil</option>
+          <option value="AR">Argentina</option>
+          <option value="MX">México</option>
+          <option value="CO">Colombia</option>
+          <option value="CL">Chile</option>
+          <option value="VE">Venezuela</option>
+        </select>
+      </div>
+      <div class="mb-8">
+        <label for="dni" class="block text-gray-700 font-medium mb-1">DNI</label>
+        <input type="text" id="dni" name="dni" maxlength="8" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <div class="mb-8">
+        <label for="telefono" class="block text-gray-700 font-medium mb-1">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <div class="mb-8">
+        <label for="correo" class="block text-gray-700 font-medium mb-1">Correo</label>
+        <input type="email" id="correo" name="correo" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <button type="submit" id="botonEnviar" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>

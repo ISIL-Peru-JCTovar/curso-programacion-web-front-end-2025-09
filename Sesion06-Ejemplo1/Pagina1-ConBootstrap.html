@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ISIL - Programacion Web Front End - Sesion N&deg; 6</title>
+  <!-- Importando Bootstrap desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/pagina-validaciones-js-vanilla.js" defer></script>
+</head>
+<body>
+  <h1>Pantalla con Bootstrap</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md">
+        <h2>Noticia 1: Lanzamiento de Nuevo Producto</h2>
+        <img class="img-fluid" src="https://www.upn.edu.pe/sites/default/files/styles/noticia_page_grande/public/2025-09/egresada-CNN-upn-v1.webp" alt="Imagen Noticia 1">
+        <p>La empresa XYZ ha anunciado el lanzamiento de su nuevo producto revolucionario que promete cambiar el mercado tecnológico.</p>
+      </div>
+      <div class="col-md">
+        <h2>Noticia 2: Evento Deportivo Internacional</h2>
+        <img class="img-fluid" src="https://e-an.americatv.com.pe/actualidad-congreso-aprobo-octavo-retiro-fondos-afp-peru-n511044-627x352-1115571.jpg" alt="Imagen Noticia 2">
+        <p>El campeonato mundial de fútbol se celebrará este año en una ciudad emblemática, reuniendo a los mejores equipos del mundo.</p>
+      </div>
+      <div class="col-md">
+        <h2>Noticia 3: Avances en Medicina</h2>
+        <img class="img-fluid" src="https://i0.wp.com/estrategos.org/wp-content/uploads/2020/02/inteligenciapreventiva_82082848-1.jpg" alt="Imagen Noticia 3">
+        <p>Científicos anuncian un importante avance en la lucha contra enfermedades crónicas, abriendo nuevas esperanzas para los pacientes.</p>
+      </div>
+      <div class="col-md">
+        <h2>Noticia 4: Descubrimiento Científico</h2>
+        <img class="img-fluid" src="https://www.udep.edu.pe/hoy/wp-content/uploads/sites/49/2020/11/Nueva-forma-de-politica-1.jpg" alt="Imagen Noticia 4">
+        <p>Un equipo internacional de investigadores ha descubierto un nuevo exoplaneta que podría albergar vida.</p>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-dark">
+  <thead>
+    <tr class="table-light">
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-dark">
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="container mt-4">
+  <h2>Formulario de Registro</h2>
+  <form action="https://httpbin.org/post" method="POST" id="formularioRegistro">
+    <div class="mb-3">
+      <label for="nombres" class="form-label">Nombres</label>
+      <input type="text" class="form-control" id="nombres" name="nombres">
+    </div>
+    <div class="mb-3">
+      <label for="apellidos" class="form-label">Apellidos</label>
+      <input type="text" class="form-control" id="apellidos" name="apellidos">
+    </div>
+    <div class="mb-3">
+      <label for="dni" class="form-label">Pais</label>
+      <select class="form-control" id="pais" name="pais">
+        <option value="">Seleccione un país</option>
+        <option value="PE">Perú</option>
+        <option value="US">Estados Unidos</option>
+        <option value="ES">España</option>
+        <option value="FR">Francia</option>
+        <option value="DE">Alemania</option>
+        <option value="IT">Italia</option>
+        <option value="JP">Japón</option>
+        <option value="CN">China</option>
+        <option value="IN">India</option>
+        <option value="BR">Brasil</option>
+        <option value="AR">Argentina</option>
+        <option value="MX">México</option>
+        <option value="CO">Colombia</option>
+        <option value="CL">Chile</option>
+        <option value="VE">Venezuela</option>   
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="dni" class="form-label">DNI</label>
+      <input type="text" class="form-control" id="dni" name="dni" maxlength="8">
+    </div>
+    <div class="mb-3">
+      <label for="telefono" class="form-label">Teléfono</label>
+      <input type="tel" class="form-control" id="telefono" name="telefono">
+    </div>
+    <div class="mb-3">
+      <label for="correo" class="form-label">Correo</label>
+      <input type="email" class="form-control" id="correo" name="correo">
+    </div>
+    <button type="submit" id="botonEnviar" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+</body>
+</html>
